@@ -1,0 +1,11 @@
+pipeline{
+agent any
+stages{
+stage('build'){
+sh 'mvn -Dmaven.test.failure.ignore=true clean install package'
+echo "build is success"
+}
+
+}
+
+}
