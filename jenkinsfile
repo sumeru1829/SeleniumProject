@@ -5,6 +5,9 @@ stage('build'){
 sh 'mvn -Dmaven.test.failure.ignore=true clean install package'
 echo "build is success"
 }
+stage('Test'){
+echo "testing success"
+}
 
 }
 
